@@ -11,6 +11,11 @@ import { db } from "../db.js";
 
 
 const Event = db.define('event', {
+    id: {
+        type: Sequelize.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
+    },
     title: {
         type: Sequelize.STRING,
         allowNull: false
